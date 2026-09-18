@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArtworkInfoCard } from '../components/common/ArtworkInfoCard';
+import { ExhibitionRouteProgress } from '../components/common/ExhibitionRouteProgress';
 import { GuideTooltip } from '../components/common/GuideTooltip';
 import { MiniMap } from '../components/common/MiniMap';
 import { GalleryScene } from '../components/scene/GalleryScene';
@@ -23,6 +24,9 @@ export function GalleryWalk() {
         <GalleryScene />
         <div className="pointer-events-none absolute left-4 top-4 border border-white/30 bg-black/50 px-3 py-2 text-sm text-white">
           {hintVisible ? 'WASD / 方向键记录漫游意图，鼠标拖动画面观察展厅' : `移动向量 ${velocity.x}, ${velocity.z}`}
+        </div>
+        <div className="absolute right-4 top-4">
+          <ExhibitionRouteProgress />
         </div>
       </section>
       <aside className="space-y-4">
