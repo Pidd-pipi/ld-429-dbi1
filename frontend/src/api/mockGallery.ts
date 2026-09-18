@@ -132,6 +132,26 @@ export const exhibitions: Exhibition[] = [
     routePoints: [{ x: 0, y: 0, z: 2 }, { x: 0, y: 0, z: -6 }],
     status: ExhibitionStatus.Upcoming,
   },
+  {
+    id: 'ex-open-air-archive',
+    title: '露天档案',
+    curator: '陆远',
+    description: '为户外展厅策划的档案装置展，展厅仍在维护，暂不可进入漫游。',
+    coverUrl: image('open-air-archive-cover'),
+    roomIds: ['room-outdoor'],
+    routePoints: [],
+    status: ExhibitionStatus.Active,
+  },
+  {
+    id: 'ex-yesterday-echo',
+    title: '昨日回声',
+    curator: '闻笛',
+    description: '已落幕的声音档案回顾展，仅保留展览档案与状态说明。',
+    coverUrl: image('yesterday-echo-cover'),
+    roomIds: ['room-virtual'],
+    routePoints: [{ x: 0, y: 0, z: 2 }],
+    status: ExhibitionStatus.Past,
+  },
 ];
 
 export const annotations: GuideAnnotation[] = [
